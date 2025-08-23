@@ -11,11 +11,112 @@ int main() {
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
+    
+    // Movimentação do Bispo (simulando uma diagonal)
+    int posicaoBispo = 1;
+    char opcao;
+
+    printf("Escolha seu movimento para o Bispo:\n");
+    printf("1. Diagonal Para Cima Esquerda.\n");
+    printf("2. Diagonal Para Baixo Esquerda.\n");
+    printf("3. Diagonal Para Cima Direita.\n");
+    printf("4. Diagonal Para Baixo Direita.\n");
+
+    printf("\n");
+
+    printf("Escolha sua jogada:");
+    scanf("%c", &opcao);
+    printf("\n");
+
+for (posicaoBispo = 1; posicaoBispo <= 5; posicaoBispo++)
+
+    switch (opcao)
+    {
+    case '1': printf("Movimento na diagonal, Cima Esquerda %d\n", posicaoBispo);
+    break;
+
+    case '2': printf("Movimento na diagonal, Baixo Esquerda %d\n", posicaoBispo);
+    break;
+
+    case '3': printf("Movimento na diagonal, Cima direta %d\n", posicaoBispo);
+    break;
+
+    case '4': printf("Movimento na diagonal, Baixo Direta %d\n", posicaoBispo);
+    break;
+
+    default:
+        printf("Opção Inválida.\n");
+        break;
+    }
+
+    //printf("Movimentação do Bispo em uma diagonal direita:\n");
+    //printf("\n");
+
+    //for (int i = 0; i <= 4; i++) {
+        //printf("Movimento para a diagonal, direita e cima %d\n", i);
+
+    //}
+
+        printf("\n");
+
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
+    
+    // Movimentação da Torre (simulando para a direita)
+    printf("Movimentação da Torre para frente:\n");
+    printf("\n");
+
+    //for (int i = 1; i <= 5; i++) {
+       // printf("Movimento %d\n", i);
+    //}
+    
+    int posicaoTorre = 1;
+
+    do
+    {
+            printf("Movimento %d\n", posicaoTorre);
+            posicaoTorre++;
+
+            /*if (posicaoTorre <= 5) 
+            {
+                posicaoTorre++;
+            } else {
+                printf("Movimento\n %d", posicaoTorre);
+                
+            }
+            */
+
+        
+    } while (posicaoTorre != 6);
+        
+    
+
+    printf("\n");
+    
+
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+    // Movimentação da Rainha (simulando para a esquerda)
+    printf("Movimentação da Rainha para a esquerda:\n");
+    printf("\n");
+
+    //for (int i = 1; i <= 8; i++) {
+        ///printf("Movimento %d\n", i);
+    //}
+
+    int posicaoInicial = 1;
+
+        while (posicaoInicial <= 8)
+        
+        {
+            printf("Movimento %d\n", posicaoInicial);
+            posicaoInicial++;
+        }
+        
+    
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
