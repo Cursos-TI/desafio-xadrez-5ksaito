@@ -131,12 +131,12 @@ for (posicaoBispo = 1; posicaoBispo <= 5; posicaoBispo++)
 
     // Loop for para a movimentação vertical (2 casas para baixo)
     for (i = 0; i < movimento_vertical; i++) {
-        printf("Baixo\n");
+        printf("Cima\n");
     }
 
     // Loop while para a movimentação horizontal (1 casa para a esquerda)
     while (movimento_horizontal > 0) {
-        printf("Esquerda\n");
+        printf("Direita\n");
         movimento_horizontal--;
     }
 
